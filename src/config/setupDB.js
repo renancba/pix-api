@@ -26,4 +26,14 @@ async function createDatabase() {
     }
 }
 
-module.exports = { createDatabase };
+async function connectToDatabase() {
+    try {
+        await adminPool.connect();
+        console.log(`Conectado ao banco de dados ${DB_NAME}`);
+    } catch (err) {
+        console.error('Erro ao conectar ao banco de dados:', err);
+        throw err;
+    }
+}
+
+module.exports = { createDatabase, connectToDatabase };
