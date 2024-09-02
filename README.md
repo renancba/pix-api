@@ -46,9 +46,6 @@ npm start
 ```
 Por padrão, a API será iniciada na porta definida em PORT (por exemplo, 8080).
 
-### 6. Teste a API
-Você pode usar ferramentas como Postman ou curl para testar os endpoints da API. Certifique-se de que o servidor esteja rodando e acessível através da URL http://localhost:<PORT>.
-
 ## Endpoints Disponíveis
 
 - **GET** `/api/pix/{ispb}/stream/start`: Inicia a recuperação de mensagens Pix.
